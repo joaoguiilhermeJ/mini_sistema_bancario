@@ -12,7 +12,7 @@ Este projeto é um sistema bancário simples em Java que utiliza PostgreSQL como
 - JDBC (driver PostgreSQL)
 
 ---
-## OBS
+## Criar Bando de Dados
 
 
 **Crie o banco de dados**  
@@ -25,4 +25,5 @@ Este projeto é um sistema bancário simples em Java que utiliza PostgreSQL como
 
     Crie a tabela em sua máquina, eu deixei ela pronta na pasta 'sql'
 
+## OBS ##
 Tem alguns bugs, depois e concerto :\
