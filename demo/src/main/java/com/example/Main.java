@@ -20,7 +20,7 @@ public class Main {
             System.out.print("Opção: ");
 
             int opcao = scanner.nextInt();
-            scanner.nextLine();  // Consumir a quebra de linha
+            scanner.nextLine();  
 
             if (opcao == 0) {
                 System.out.println("Saindo do sistema.");
@@ -86,7 +86,7 @@ public class Main {
 
                     if (usuarioParaDeposito != null) {
                         usuarioParaDeposito.depositar(valorDeposito);
-                        // Atualizar saldo no banco
+                        
                         usuarioDao.atualizarSaldo(usuarioParaDeposito);
                         System.out.println("Depósito realizado com sucesso.");
                     } else {

@@ -25,5 +25,6 @@ Este projeto é um sistema bancário simples em Java que utiliza PostgreSQL como
 
     Crie a tabela em sua máquina, eu deixei ela pronta na pasta 'sql'
 
-## OBS ##
+---
+## Criar Bando de Dados
 Tem alguns bugs, depois e concerto :\

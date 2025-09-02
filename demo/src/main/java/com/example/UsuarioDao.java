@@ -89,7 +89,7 @@ public class UsuarioDao {
     }
 
     public void deletarUsuario(int id) {
-        // Correção: A tabela foi alterada de "motos" para "usuario".
+        
         String sql = "DELETE FROM usuarios WHERE id = ?";
         try (Connection conn = getConnection();
                 PreparedStatement stmt = conn.prepareStatement(sql)) {
@@ -97,10 +97,10 @@ public class UsuarioDao {
             stmt.setInt(1, id);
             int linhas = stmt.executeUpdate();
             if (linhas > 0) {
-                // Correção: A mensagem foi alterada para "Usuário deletado".
+                
                 System.out.println("Usuário deletado ");
             } else {
-                // Correção: A mensagem foi alterada para "Usuário não encontrado".
+                
                 System.out.println("Usuário não encontrado");
             }
 
@@ -116,8 +116,7 @@ public class UsuarioDao {
                 ResultSet rs = stmt.executeQuery()) {
 
             if (rs.next()) {
-                // Correção: O nome da coluna foi alterado de "total_motos" para
-                // "total_usuarios".
+                
                 return rs.getInt("total_usuarios");
             }
 
